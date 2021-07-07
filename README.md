@@ -46,19 +46,19 @@ sudo apt-get install -y openjdk-8-jdk
 
 3. Download and extract packages
 
-###For Elasticsearch
+### For Elasticsearch
 ```bash
 sudo wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.2.0-amd64.deb
 sudo dpkg -i elasticsearch-7.2.0-amd64.deb
 ```
 
-###For Kibana
+### For Kibana
 ```bash
 sudo wget https://artifacts.elastic.co/downloads/kibana/kibana-7.2.0-amd64.deb
 sudo dpkg -i kibana-7.2.0-amd64.deb
 ```
 
-###For LogStash
+### For LogStash
 ```bash
 sudo apt-get install -y apt-transport-https
 sudo wget https://artifacts.elastic.co/downloads/logstash/logstash-7.2.0.deb
@@ -67,7 +67,7 @@ sudo dpkg -i logstash-7.2.0.deb
 
 4. Configuration 
 
-###For Elasticsearch
+### For Elasticsearch
 ```bash
 #Open Config file
 sudo nano /etc/elasticsearch/elasticsearch.yml
@@ -84,7 +84,7 @@ sudo systemctl start elasticsearch
 sudo systemctl status elasticsearch
 ```
 
-###For Kibana
+### For Kibana
 ```bash
 #Open Config file
 sudo nano /etc/kibana/kibana.yml
@@ -104,7 +104,7 @@ Enter Kibana through the web browser
 
 https://localhost:5042
 
-###For LogStash
+### For LogStash
 
 Create a directory 
 ```bash
