@@ -1,6 +1,6 @@
-## Pipedrivetask
+# Pipedrivetask
 
-# Instance Launch in AWS:
+## Instance Launch in AWS:
 
 1. Create an account
 2. Go to EC2 dashboard
@@ -13,7 +13,7 @@
 9. Create key pair (Note: download)
 10. View instance
 
-# Deployment and Configuration of Elastic Stack
+## Deployment and Configuration of Elastic Stack
 
 1. Open in terminal the IP addresses of created intances
 
@@ -65,3 +65,11 @@ sudo wget https://artifacts.elastic.co/downloads/logstash/logstash-7.2.0.deb
 sudo dpkg -i logstash-7.2.0.deb
 ```
 
+4. Configuration 
+
+For elasticsearch
+```bash
+#Open Config file
+sudo nano /etc/elasticsearch/elasticsearch.yml
+```
+Make changes and create a cluster (Note: watch [elasticsearch_master.yml](https://github.com/solmazsafarli/pipedrivetask/blob/main/elasticsearch_master.yml) , [elasticsearch_node1.yml](https://github.com/solmazsafarli/pipedrivetask/blob/main/elasticsearch_node1.yml), [elasticsearch_node2](https://github.com/solmazsafarli/pipedrivetask/blob/main/elasticsearch_node2.yml))
