@@ -46,7 +46,7 @@ sudo apt-get install -y openjdk-8-jdk
 
 3. Download and extract packages
 
-For elasticsearch
+For Elasticsearch
 ```bash
 sudo wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.2.0-amd64.deb
 sudo dpkg -i elasticsearch-7.2.0-amd64.deb
@@ -67,9 +67,35 @@ sudo dpkg -i logstash-7.2.0.deb
 
 4. Configuration 
 
-For elasticsearch
+For Elasticsearch
 ```bash
 #Open Config file
 sudo nano /etc/elasticsearch/elasticsearch.yml
 ```
-Make changes and create a cluster (Note: watch [elasticsearch_master.yml](https://github.com/solmazsafarli/pipedrivetask/blob/main/elasticsearch_master.yml) , [elasticsearch_node1.yml](https://github.com/solmazsafarli/pipedrivetask/blob/main/elasticsearch_node1.yml), [elasticsearch_node2](https://github.com/solmazsafarli/pipedrivetask/blob/main/elasticsearch_node2.yml))
+Make changes and create a cluster (Note: watch [elasticsearch_master.yml](https://github.com/solmazsafarli/pipedrivetask/blob/main/elasticsearch_master.yml) , [elasticsearch_node1.yml](https://github.com/solmazsafarli/pipedrivetask/blob/main/elasticsearch_node1.yml), [elasticsearch_node2.yml](https://github.com/solmazsafarli/pipedrivetask/blob/main/elasticsearch_node2.yml))
+
+```bash
+#Start ElasticSearch
+sudo systemctl start elasticsearch
+```
+
+```bash
+#Status check (should be Active running)
+sudo systemctl status elasticsearch
+```
+
+For Kibana
+```bash
+#Open Config file
+sudo nano /etc/kibana/kibana.yml
+```
+
+```bash
+#Start Kibana
+sudo systemctl start kibana
+```
+
+```bash
+#Status check 
+sudo systemctl status kibana
+```
