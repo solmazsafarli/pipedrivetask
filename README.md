@@ -89,6 +89,7 @@ For Kibana
 #Open Config file
 sudo nano /etc/kibana/kibana.yml
 ```
+Note: watch [kibana.yml](https://github.com/solmazsafarli/pipedrivetask/blob/main/kibana.yml)
 
 ```bash
 #Start Kibana
@@ -99,3 +100,6 @@ sudo systemctl start kibana
 #Status check 
 sudo systemctl status kibana
 ```
+Enter Kibana through the web browser
+
+(https://localhost:5042)
